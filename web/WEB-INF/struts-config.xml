@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+    <form-beans >
+        <form-bean name="memberForm" type="com.dmkj.test.form.MemberActionForm"/>
+    </form-beans>
+    <action-mappings>
+        <action name="memberForm" attribute="memberForm" path="/member" type="com.dmkj.test.action.MemberAction" input="/index.jsp"/>
+    </action-mappings>
+    <message-resources
+            parameter="com.dmkj.test.ApplicationResources" />
+</struts-config>
